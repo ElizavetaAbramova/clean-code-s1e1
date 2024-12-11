@@ -1,44 +1,43 @@
-/* Basic Style */
 .body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.more-info {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.more-information__img {
+.more-info__img {
   width: 100%;
 }
 
-.aaa .more_inf {
+.more-info__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
-  .aaa {
+  .more-info {
     text-align: center;
   }
 }
 
-.centered-main-page-element {
+.task-list-section {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
-.task {
+.task-text {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.add-new-task__line {
   display: flex;
 }
 
@@ -70,7 +69,7 @@ button {
 .button:hover {
   color: #3a3a3a;
 }
-/* Heading */
+
 .task-list__title,
 .add-task__label {
   color: #333;
@@ -99,8 +98,7 @@ button {
   color: #333;
 }
 
-/* New Task */
-.add-task__label {
+.add-new-task__label {
   display: block;
   margin: 0 0 20px;
 }
@@ -109,7 +107,6 @@ button {
   width: 318px;
 }
 
-/* Task list */
 .task-line {
   overflow: hidden;
   padding: 20px 0;
@@ -117,11 +114,6 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-/* TODO: delete this block  */
-li > * {
-  vertical-align: middle;
 }
 
 .task-line__check-input {
@@ -149,13 +141,11 @@ li > * {
   transform: rotateZ(0);
 }
 
-/* Completed */
-ul#completed-tasks label {
+.task-line__label-for-text_completed {
   text-decoration: line-through;
   color: #888;
 }
 
-/* Edit Task */
 .task-list__text-input_hidden {
   display: none;
 }
