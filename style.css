@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -12,7 +12,7 @@ body {
   text-align: right;
 }
 
-.aaa img {
+.more-information__img {
   width: 100%;
 }
 
@@ -55,7 +55,7 @@ input,button{
   outline: none;
 }
 
-button {
+.button {
   background: none;
   border: 0px;
   color: #888;
@@ -65,12 +65,12 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.button:hover {
   color: #3a3a3a;
 }
 /* Heading */
-h3,
-label[for=new-task] {
+.task-list__title,
+.add-task__label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -80,7 +80,7 @@ label[for=new-task] {
   text-transform: uppercase;
 }
 
-input[type=text] {
+.task-list__text-input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -93,22 +93,22 @@ input[type=text] {
   color: #888;
 }
 
-input[type=text]:focus {
+.task-list__text-input:focus {
   color: #333;
 }
 
 /* New Task */
-label[for=new-task] {
+.add-task__label {
   display: block;
   margin: 0 0 20px;
 }
 
-input#new-task {
+.task-list__text-input_new-task {
   width: 318px;
 }
 
 /* Task list */
-li {
+.task-line {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -117,32 +117,33 @@ li {
   align-items: center;
 }
 
+/* TODO: delete this block  */
 li > * {
   vertical-align: middle;
 }
 
-li > input[type=checkbox] {
+.task-line__check-input {
   margin: 0 10px;
 }
 
-li > label {
+.task-line__label-for-text {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-li >    input[type=text] {
+.task-list__text-input {
   width: 226px;
 }
 
-button.delete img {
+.delete-task__button_img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.delete-task__button_img:hover {
   transform: rotateZ(0);
 }
 
@@ -153,15 +154,15 @@ ul#completed-tasks label {
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.task-list__text-input_hidden {
   display: none;
 }
 
-ul li.editMode input[type=text] {
+.task-list__text-input_edit {
   display: inline-block;
   width: 224px;
 }
 
-ul li.editMode label {
+.task-line__label-for-text_hidden {
   display: none;
 }
