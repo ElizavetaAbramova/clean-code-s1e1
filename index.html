@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+<html lang="en">
   <head>
     <title>Todo App</title>
+    <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="style.css" media="screen">
   </head>
   <body class="body">
     <div class="aaa">
@@ -10,21 +12,21 @@
       <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </div>
     <div class="centered-main-page-element">
-      <p id="topSectionForAddingElementToList">
+      <div id="topSectionForAddingElementToList">
         <label class="add-task__label" for="new-task">Add Item</label>
         <div class="task-row-wrapper">
           <input id="new-task" class="task task-list__text-input task-list__text-input_new-task" type="text">
-          <button class="button add-new-task__button">Add</button>
+          <button class="button add-new-task__button" type="button">Add</button>
         </div>
-      </p>
+      </div>
       <h3 class="title task-list__title">Todo</h3>
       <ul id="incompleteTasks">
         <li class="task-line">
           <input class="task-line__check-input" type="checkbox">
           <label class="task task-line__label-for-text">Pay Bills</label>
           <input type="text" class="task task-list__text-input task-list__text-input_hidden">
-          <button class="button edit-task__button">Edit</button>
-          <button class="button delete-task__button">
+          <button class="button edit-task__button" type="button">Edit</button>
+          <button class="button delete-task__button" type="button">
             <img class="delete-task__button_img" src="./remove.svg">
           </button>
         </li>
@@ -32,8 +34,8 @@
           <input class="task-line__check-input" type="checkbox">
           <label class="task task-line__label-for-text task-line__label-for-text_hidden">Go Shopping</label>
           <input type="text" value="Go Shopping" class="task task-list__text-input task-list__text-input_edit">
-          <button class="button edit-task__button">Save</button>
-          <button class="button delete-task__button">
+          <button class="button edit-task__button" type="button">Save</button>
+          <button class="button delete-task__button" type="button">
               <img class="delete-task__button_img" src="./remove.svg">
           </button>
         </li>
@@ -44,8 +46,8 @@
           <input class="task-line__check-input" type="checkbox" checked>
           <label class="task task-line__label-for-text">See the Doctor</label>
           <input type="text" class="task task-list__text-input task-list__text-input_hidden">
-          <button class="button edit-task__button">Edit</button>
-          <button class="button delete-task__button">
+          <button class="button edit-task__button" type="button">Edit</button>
+          <button class="button delete-task__button" >
             <img class="delete-task__button_img" src="./remove.svg">
           </button>
         </li>
