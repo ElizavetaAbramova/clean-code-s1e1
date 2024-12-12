@@ -146,15 +146,12 @@ button {
   color: #888;
 }
 
-.task-list__text-input_hidden {
+.task-list__text-input_hidden,
+.task-line__label-for-text_hidden {
   display: none;
 }
 
 .task-list__text-input_edit {
   display: inline-block;
   width: 224px;
-}
-
-.task-line__label-for-text_hidden {
-  display: none;
 }
